@@ -3,7 +3,7 @@
     margin:0;
 }
 body{
-    background-image: url(/UI/Asset/imag/back1.jpg);
+    background-image: url(../Asset/imag/back1.jpg);
 }
 
 /* Navigation bar styling */
