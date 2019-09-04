@@ -100,18 +100,9 @@ h2{
 .entry{
     margin-left: 250px;
 }
-
-.buton{
-    display: flex;
-    justify-content: end;
-   
-}
-
 button{
+    height:5vh;
+    width: 10vw;
+    margin-left: 500px;
     background-color: lightblue;
-    height:5vh; 
-    width:5vw;
-    margin-top: 30px;
-    margin-right: 10px;
-   
 }
