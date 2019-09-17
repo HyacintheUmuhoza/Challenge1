@@ -41,14 +41,29 @@ width:20vh;
 }
 
 /* Content styling */
+
+.titles{
+    display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    background-color: skyblue;
+     width: 100%;
+    flex:1 1 200px;
+    margin-left:0px;
+    
+}
+
 .header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-     justify-content: center;
-    align-items: center;
-     width:90vh;
-     margin-left: 400px; 
+    
+     width:80vw;
+     margin-left: 100px; 
      margin-top: 80px;
      border-radius: 10px 10px solid #fff;
      background-color: #fff; 
@@ -56,54 +71,47 @@ width:20vh;
      border-radius: 20px;
      flex:1 1 200px;
 }
-h1{
-    text-align: center;
-    width:100vw;
-    margin-top: 50px;
-    background-color: rgb(114, 150, 138);
-    width: 500px; 
-    flex:1 1 200px;
-    
-}
+
 
 .forms{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-     justify-content: center;
      padding-top: 20px;
     margin:20px;
     flex:1 1 200px;
      
 }
-.form{
-    margin-top: 20px;
-    flex: 1 1 30px;
-    height: 8vh;
-    width:  80vh;
-     border: 2px black;
+h2{
+    color: navy;
+   
+}
+.number{
+    margin-left: 30px;
+}
+
+.date{
+    margin-left: 100px;
     
 }
-.formb{
-    margin-top: 20px;
-    flex: 0 1 30px;
-    height: 5vh;
-    width:  25vh;
-    background-color: rgb(114, 150, 138);
-  margin-left: 150px;
-  border-radius: 20px;
+.title{
+    margin-left: 150px;
+}
+.entry{
+    margin-left: 250px;
 }
 
-p{
-  padding-top: 15px;
-    flex: 0 1 30px;
-    font-size: 20px;
-    width: 500px;
-    margin-bottom: 0px;
-}
-a{
-    text-decoration: none;
+.buton{
+    display: flex;
+    justify-content: end;
+   
 }
 
-
-    
+button{
+    background-color: lightblue;
+    height:5vh; 
+    width:5vw;
+    margin-top: 30px;
+    margin-right: 10px;
+   
+}
