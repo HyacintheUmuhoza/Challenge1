@@ -17,8 +17,8 @@ app.use('/', router);
 
 
 
- const PORT = 2000;
+ const PORT = process.env.PORT;
 
-app.listen(PORT, () => {
+app.listen(PORT , () => {
   console.log(`server running on port ${PORT}`)
 });
