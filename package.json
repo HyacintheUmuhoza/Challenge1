@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node ./Server/index.js"
+    "start": "node build/index.js",
+    "dev": "nodemon --exec babel-node ./Server/index.js",
+    "build":"babel Server -d build",
+    "clean":  "rm -rf build"
+    
   },
   "author": "Hyacinthe",
   "license": "ISC",
