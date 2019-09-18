@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node index.js",
-    "dev": "nodemon index.js --exec babel-node --"
+    "dev": "nodemon --exec babel-node ./Server/index.js"
   },
   "author": "Hyacinthe",
   "license": "ISC",
@@ -15,9 +14,9 @@
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.6.1",
     "@babel/preset-env": "^7.6.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2"
   }
 }
