@@ -38,10 +38,11 @@ const putEntry = (req, res) => {
     };
   
     Models.splice(itemIndex, 1, updatedEntry);
+    
   
     return res.status(201).send({
    success: 'true',
-    message: 'Entry added successfully',
+    message: 'Entry updated successfully',
       updatedEntry
     });
    };
