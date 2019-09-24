@@ -1,15 +1,13 @@
-
 {
   "name": "server",
   "version": "1.0.0",
   "description": "Challenge 2 project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require @babel/register ./Server/test.js --exit",
     "start": "nodemon --exec babel-node ./Server/index.js",
-    "build":"babel Server -d build",
-    "clean":  "rm -rf build"
-    
+    "build": "babel Server -d build",
+    "clean": "rm -rf build"
   },
   "author": "Hyacinthe",
   "license": "ISC",
@@ -18,6 +16,7 @@
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.6.1",
     "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
@@ -26,8 +25,11 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.3.0",
     "@typescript-eslint/parser": "^2.3.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "eslint": "^6.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0"
   }
 }
