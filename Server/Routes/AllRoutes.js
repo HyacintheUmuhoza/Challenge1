@@ -11,11 +11,11 @@ const router = express.Router();
 
 
 
-router.get('/api/p1/entries',getAll);
-router.get('/api/p1/entries/:id',getSpecific);
-router.delete('/api/p1/entries/:id',DeleteEntry);
-router.post('/api/p1/entries',AddEntry);
-router.put('/api/p1/entries/:id',updateEntry);
+router.get('/api/v1/entries',getAll);
+router.get('/api/v1/entries/:id',getSpecific);
+router.delete('/api/v1/entries/:id',DeleteEntry);
+router.post('/api/v1/entries',AddEntry);
+router.put('/api/v1/entries/:id',updateEntry);
 
 
 export default router;

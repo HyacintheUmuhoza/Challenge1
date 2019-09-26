@@ -11,10 +11,10 @@ const getEntry=(req, res) => {
         });
       } 
   });
-   return res.status(404).send({
-     success: 'false',
-     message: 'entry does not exist',
-    });
+  //  return res.status(404).send({
+  //    success: 'false',
+  //    message: 'entry does not exist',
+  //   });
   };
 
   export default getEntry;
