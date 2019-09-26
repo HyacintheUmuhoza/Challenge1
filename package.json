@@ -4,7 +4,7 @@
   "description": "Challenge 2 project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require @babel/register ./Server/test.js --exit",
+    "test": "mocha --require @babel/register ./Server/test.js --exit ",
     "start": "nodemon --exec babel-node ./Server/index.js",
     "build": "babel Server -d build",
     "clean": "rm -rf build"
@@ -23,8 +23,8 @@
     "nodemon": "^1.19.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.3.0",
-    "@typescript-eslint/parser": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "eslint": "^6.4.0",

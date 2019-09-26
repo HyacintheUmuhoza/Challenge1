@@ -14,13 +14,13 @@ const deleteEntry= (req, res) => {
       }
     });
   
+ 
+      // return res.status(404).send({
+      //   success: 'false',
+      //   message: 'entry not found'
+      // });
   
-      return res.status(404).send({
-        success: 'false',
-        message: 'entry not found'
-      });
-  
-   
+    
   };
   
   export default deleteEntry;
