@@ -8,3 +8,5 @@ In challenge 1, I have worked on front end where I have designed user interface.
 
 
 In challenge 2,I have worked on backend.I have created different endpoints like get all entries,get a specific entry,add new entry, delete entry and update entry. Also I have created test of all endpoints.I have hosted endpoints on heroku.
+
+[![Coverage Status](https://coveralls.io/repos/github/HyacintheUmuhoza/Challenge1/badge.svg?branch=Develop)](https://coveralls.io/github/HyacintheUmuhoza/Challenge1?branch=Develop)

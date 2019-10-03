@@ -1,19 +1,20 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-undef */
 import chai, { expect } from 'chai';
 import chaiHTTP from 'chai-http';
-import app from '../Server/index';
+import app from '../index';
 
 
 chai.use(chaiHTTP);
 
 const newUser = {
-    id: 3,
     title: 'Designing',
     description: 'I will develop my own website',
     
   };
   
 describe('User APIs testing', () => {
-    it('GET /users should return all entries', done => {
+    it('GET /users should return all entries', (done) => {
       chai
         .request(app)
         .get('/api/v1/entries')
@@ -24,7 +25,7 @@ describe('User APIs testing', () => {
         });
     });
 
-    it('GET /users should get specific entry', done => {
+    it('GET /users should get specific entry', (done) => {
         chai
           .request(app)
           .get('/api/v1/entries/1')
@@ -46,7 +47,7 @@ describe('User APIs testing', () => {
       //     });
       // })
 
-    it('POST /users should create their own entries', done => {
+    it('POST /users should create their own entries', (done) => {
       chai
         .request(app)
         .post('/api/v1/entries')
@@ -63,7 +64,7 @@ describe('User APIs testing', () => {
   
   
   describe('Users Modifying', () => {
-    it('Delete /users should delete entries', done => {
+    it('Delete /users should delete entries', (done) => {
       chai
         .request(app)
         .delete('/api/v1/entries/1')
@@ -74,7 +75,7 @@ describe('User APIs testing', () => {
         });
     });
   
-    it('UPDATE /users should update entries', done => {
+    it('UPDATE /users should update entries', (done) => {
       chai
         .request(app)
         .put('/api/v1/entries/1')
