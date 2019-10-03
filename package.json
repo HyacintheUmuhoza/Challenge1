@@ -4,7 +4,7 @@
   "description": "Challenge 2 project",
   "main": "index.js",
   "scripts": {
-    "test": "cd server &&  nyc --reporter=html --reporter=text mocha --require @babel/register tests/* --exit",
+    "test": "nyc --reporter=html --reporter=text mocha --require @babel/register tests/* --exit",
     "start": "nodemon --exec babel-node ./Server/index.js",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "build": "babel Server -d build",
