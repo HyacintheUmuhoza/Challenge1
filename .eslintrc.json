@@ -10,14 +10,18 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
     "rules": {
+        "linebreak-style": "off",
+        "indent": "off",
+        "no-trailing-spaces": "off",
+        "no-multiple-empty-lines": "off",
+        "array-callback-return": "off",
+        "no-else-return":"off",
+        "no-console":"off"
+        
     }
 }
