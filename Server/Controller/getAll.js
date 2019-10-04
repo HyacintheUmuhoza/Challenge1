@@ -1,10 +1,10 @@
 import Models from '../Models/entriesModel';
 
-const getAllEntries=(req, res) => {
+const getAllEntries = (req, res) => {
     res.status(200).send({
-      success: 'true',
+      status: '200',
       message: 'View your entries list',
-      entries: Models
+      entries: Models,
     });
   };
 
