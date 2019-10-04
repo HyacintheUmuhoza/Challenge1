@@ -18,11 +18,11 @@ body{
 .logo{
     margin-left:20px;
     margin-right: 950px;
-    margin-top:20px;
+    margin-top:-20px;
 }
 .logo img{
-height:8vh;
-width:20vh;
+    height:25vh;
+    width:20vh;
 }
 .nav-menu{
    display: flex;
@@ -38,6 +38,7 @@ width:20vh;
     text-decoration: none;
     font-size: 20px;
     font-family: sans-serif;
+    margin-top:20px;
 
 }
 
