@@ -6,4 +6,4 @@ MyDiary is a website which will help users to create their own diaries.A diary i
 
 
 
-[![Coverage Status](https://coveralls.io/repos/github/HyacintheUmuhoza/Challenge1/badge.svg?branch=Develop)](https://coveralls.io/github/HyacintheUmuhoza/Challenge1?branch=Develop)
+[![Build Status](https://travis-ci.org/HyacintheUmuhoza/Challenge1.svg?branch=Develop)](https://travis-ci.org/HyacintheUmuhoza/Challenge1) [![Coverage Status](https://coveralls.io/repos/github/HyacintheUmuhoza/Challenge1/badge.svg?branch=Develop)](https://coveralls.io/github/HyacintheUmuhoza/Challenge1?branch=Develop)
