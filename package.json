@@ -6,6 +6,7 @@
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha --require @babel/register tests/* --exit",
     "start": "nodemon --exec babel-node ./Server/index.js",
+    "create": "cross-env NODE_ENV=development babel-node ./Server/Database/db createTables",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "build": "babel Server -d build",
     "clean": "rm -rf build"
@@ -21,9 +22,11 @@
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
+    "cross-env": "^6.0.3",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "joi": "^14.3.1",
+    "make-runnable": "^1.3.6",
     "nodemon": "^1.19.2",
     "pg": "^7.12.1"
   },

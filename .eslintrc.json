@@ -22,6 +22,7 @@
         "array-callback-return": "off",
         "no-else-return":"off",
         "no-console":"off"
+       
         
     }
 }
