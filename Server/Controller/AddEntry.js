@@ -1,4 +1,6 @@
-import Models from '../Models/entriesModel';
+/* eslint-disable consistent-return */
+/* eslint-disable no-shadow */
+import { pool } from '../Database/db';
 import validateEntry from '../validation/entryValidation';
 
 
@@ -11,16 +13,24 @@ const postEntry = (req, res) => {
   }
  
  const entry = {
-   id: Models.length + 1,
    title: req.body.title,
    description: req.body.description,
  };
- Models.push(entry);
- return res.status(201).send({
-   status: '2001',
-   message: 'Entry added successfully',
-   entry,
- });
+ pool.connect((err, client, done) => {
+  const query = 'INSERT INTO entries(title,description) VALUES($1,$2) RETURNING *';
+  const values = [entry.title, entry.description];
+
+  client.query(query, values, (error, result) => {
+    done();
+    if (error) {
+      return res.status(400).json({ error });
+    }
+    return res.status(201).send({
+      status: 201,
+      result: result.rows[0],
+    });
+  });
+});
 };
 
 export default postEntry;
