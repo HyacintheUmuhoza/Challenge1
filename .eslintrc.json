@@ -21,7 +21,8 @@
         "no-multiple-empty-lines": "off",
         "array-callback-return": "off",
         "no-else-return":"off",
-        "no-console":"off"
+        "no-console":"off",
+        "no-useless-catch":"off"
        
         
     }

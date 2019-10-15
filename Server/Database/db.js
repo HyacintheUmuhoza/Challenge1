@@ -17,23 +17,21 @@ const config = {
   port: DATABASE_PORT,
 };
 
-const pool = new Pool(config);
+export const pool = new Pool(config);
 
 pool.on('connect', () => {
   console.log('connected to the Database');
 });
 
 
-const createTables = () => {
+export const createTables = () => {
     const registers = `CREATE TABLE IF NOT EXISTS 
     users(
        user_id serial PRIMARY KEY,
        firstname VARCHAR (50) NOT NULL,
        lastname VARCHAR (50) NOT NULL,
-       password VARCHAR (50) NOT NULL,
        email VARCHAR (355) UNIQUE NOT NULL,
-       created_on TIMESTAMP NOT NULL,
-       last_login TIMESTAMP
+       password VARCHAR (50) NOT NULL
     )`;
     const diaries = `CREATE TABLE IF NOT EXISTS
         entries(
@@ -52,15 +50,9 @@ const createTables = () => {
       });
   };
 
-createTables();
-
 pool.on('remove', () => {
     console.log('client removed');
     process.exit(0);
 });
   
-  
- 
-  module.exports = { createTables, pool };
-  
-  require('make-runnable');
+require('make-runnable');

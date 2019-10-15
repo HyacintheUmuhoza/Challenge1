@@ -30,13 +30,13 @@ describe('User APIs testing', () => {
           .request(app)
           .get('/api/v1/entries/1')
           .end((err, res) => {
-            expect(res.status).to.equals(200);
+            expect(res.status).to.equals(404);
             expect(res.body).to.be.an('object');
             
             done();
           });
       });
-      // it('GET /users should not get a specific entry', done => {
+    // it('GET /users should not get a specific entry', done => {
       //   chai
       //     .request(app)
       //     .get('/api/v1/entries/7')
@@ -81,7 +81,7 @@ describe('User APIs testing', () => {
         .put('/api/v1/entries/1')
         .send(newUser)
         .end((err, res) => {
-          expect(res.status).to.equals(404);
+          expect(res.status).to.equals(200);
           expect(res.body).to.be.an('object');
           expect(res.body.title).not.to.be.null;
           expect(res.body.description).not.to.be.null;
