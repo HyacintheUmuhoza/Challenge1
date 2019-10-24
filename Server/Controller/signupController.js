@@ -14,7 +14,7 @@ class myDiary {
             if (userDiaries.length) {
                 return res.status(409).send({
                     status: 409,
-                    message: 'email exist',
+                    message: 'Email exist',
                 });
             }
             const title = 'firstname, lastname,email,password';
@@ -35,7 +35,7 @@ class myDiary {
             console.log('error', error);
             return res.status(500).send({
                 status: 500,
-                err: 'There is an error',
+                err: 'An error',
             });
         }
     }
@@ -57,7 +57,7 @@ class myDiary {
             console.log('Errors', error);
             return res.status(500).send({
                 status: 500,
-                err: 'error occurred',
+                err: 'There is an error',
             });
         }
     }
